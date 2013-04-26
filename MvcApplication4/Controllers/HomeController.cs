@@ -10,7 +10,8 @@ namespace MvcApplication4.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to ASP.NET MVC!";
+
+            ViewBag.Message = Request.UserAgent.ToString();
 
             return View();
         }
